@@ -1,0 +1,298 @@
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+    border: 0;
+    padding: 0px 5px 5px 5px;
+  }
+h1{
+  font-family: "Playfair Display", Arial, Helvetica, "Times New Roman", sans-serif;
+}
+  html, body, h2, h3, h4, ul, ol, li, p, a {
+    font-family: Helvetica, Arial, "Times New Roman", sans-serif;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: #000000;
+    margin: 0 0 15px 0;
+    padding:15px 0 0 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+  h2 {
+    color: #000000;
+    margin: 15px 0 15px;
+    text-align: center;
+  }
+  h3 {
+    color: #333333;
+    margin: 0px 0 0px 0;
+    padding: 0px;
+  }
+  h4 {
+    color: #666666;
+    margin: 0px 0 0px 0;
+  }
+  p {
+    color: #444444;
+    margin: 0 0 10px 0;
+  }
+  a {
+    color: #440000;
+  }
+  ul {
+    padding: 0 0 0 30px;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  body {
+    padding: 0;
+  }
+  ol {
+    padding: 0 0 0 20px;
+  }
+footer{
+    font-size: 16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#2b2b2c;
+    color: white;
+    text-align: center;
+}
+
+.headernNav{
+    background-color: #2b2b2c;
+}
+
+.headernNav h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:white;
+}
+
+/* Nav */
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    padding:0;
+    margin:12px;
+    justify-content: center;
+}
+
+.nav a{
+    text-decoration: none;
+    padding:8px; 
+    color:white;
+    display: block;
+    text-align: center;
+}
+
+.nav {
+    padding: 0;
+    text-align: center;
+  }
+  .nav li {
+    display:inline;
+    padding-right:20px;
+  }
+  /* small nav function in css for the appeal*/
+  .nav li:last-child {
+    padding-right:0;
+  }
+  .nav a:hover{
+    font-weight: bold;
+    background:rgb(11, 11, 11);
+  }
+
+/* Nav */
+
+.FeaturedItem h2{
+  color:#2b2b2c;
+  text-align: center;
+}
+.FeaturedItem img{
+  margin: 0 auto 15px auto;
+  display: block;
+  height: 460px;
+  width: auto;
+  border-radius: 400px;
+  border-color: #2b2b2c;
+  border-style:none;
+}
+.FeaturedItem a{
+  text-decoration: none;
+}
+
+.Recipes h2{
+  font-size: 56px;
+}
+
+.ContainerV {
+  display: flex;
+  flex-direction: column; /* NEW */
+  justify-content: center;
+  vertical-align: top;
+  text-align: center;
+}
+
+.RecipeItem{
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.RecipeItem p{
+  color: #555555;
+  margin: 0px 0 0px 0;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+.RecipeItem a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+#featurehighlight{
+  color: #878787;
+  text-align: Right;
+  font-size: 12px;
+}
+
+.RecipeItem img{
+  height: 100px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.DetailsTop img{
+  margin: 0 auto 15px auto;
+  display: block;
+  height: 100px;
+  width: auto;
+  border-radius: 400px;
+  border-color: #2b2b2c;
+  border-style:none;
+}
+
+.Ingredient h2{
+  border-bottom: 1px solid #2b2b2c;
+}
+
+.Ingredient{
+  text-align: center;
+}
+
+.Ingredient ul{
+  display: inline-block;
+  text-align:left;
+}
+
+.Ingredient li{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Direction h2{
+  border-bottom: 1px solid #2b2b2c;
+}
+
+.Direction{
+  text-align: center;
+  list-style-position: inside;
+}
+
+.Direction ul{
+  display: inline-block;
+  text-align:left;
+}
+
+.Direction li{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.PhotosPhotoContainer {
+  display: inline-block;
+  text-align: center;
+}
+.Photos h2{
+  border-bottom: 1px solid #2b2b2c;
+}
+.Photos img{
+  margin: 0 auto 0px auto;
+  height: 250px;
+  width: auto;
+  border-radius: 10px;
+  border-color: #2b2b2c;
+  border-style:none;
+}
+
+.Suggest h2{
+  font-size: 56px;
+}
+
+.SuggestContainer{
+  border-radius: 30px;
+  color: white;
+  margin: 0 37% 0 37%  ;
+  padding: 20px 0 20px 0;
+  width:auto;
+  height:auto;
+  background-color: #2b2b2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width:1250px) {
+  .SuggestContainer{
+    margin: 0 15% 0 15%;
+}
+}
+
+label {
+  display: inline-block;
+  width: 125px;
+  text-align: right;  
+}
+
+.SubmitButton{
+  text-align: center;
+}
+.textboxContainer{
+  display: flex;
+  align-items: top;
+  gap: 5px;
+}
+
+form input, form textarea{
+  margin: 5px 0;
+  padding: 5px;
+  background: white;
+  font-size: 12px;
+  border-radius: 10px;
+}
+form button{
+  padding:15px;
+  background:white;
+  color:#2b2b2c;
+  font-size: 16px;
+  border:0;
+  cursor: pointer;
+  width: 250px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
+
+.PhotoContainer {
+  display: flex;
+  margin: 0 20px 30px 20px;
+}

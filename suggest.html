@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Suggest</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="headernNav">
+  <header>
+    <h1>RECIPE WORLD</h1>
+  </header>
+  <div class="nav">
+    <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="recipes.html">RECIPES​</a></li>
+    <li><a href="suggest.html">SUGGEST​</a></li>
+    </ul>
+  </div>
+  </div>
+  <main>
+    <section Class="Suggest">
+        <h2>SUGGEST A RECIPE​</h2>
+    </section>
+    <section class="SuggestContainer">
+    <form action="'#" class="formSuggest">
+        <label for="fRName">Recipe Name*: </label>
+        <input type="text" id="fRName" name="fRName" placeholder="Your Recipe Name" required><br><br>
+        <div class="textboxContainer">
+            <label for="fIngredients">Ingredients*: </label>
+            <textarea id="fIngredients" name= "fIngredients" placeholder="List of Ingredenients" required rows="15" cols="21"></textarea>
+        </div><br><br>
+        <label for="fName">Your Name*: </label>
+        <input type="text" id="fName" name="fName" placeholder="Your First and Last Name" required><br><br>
+        <label for="fEmail">Your Email*:</label>
+        <input type="Email" id="fEmail" name="fEmail" placeholder="Your Email" required><br><br>
+        <label for="ftickedbox">Agree with T&C:</label>
+        <input type="checkbox" id="ftickedbox" name="ftickedbox" required><br><br>
+        <div Class="SubmitButton">
+        <button type="submit">Submit Recipe</button>
+        </div>
+    </form>
+
+    </section>
+    <script>
+      let fsubmit= document.getElementsByClassName("formSuggest")[0];
+      fsubmit.addEventListener('submit',(e)=>{
+        e.preventDefault();
+        let fRName = document.getElementById('fRName').value;
+        let fIngredients= document.getElementById('fIngredients').value;
+        let fName= document.getElementById('fName').value;
+        let fEmail= document.getElementById('fEmail').value;
+        let fmessage= `Recipe Name : ${fRName} <br> Ingredients : ${fIngredients} <br> Name : ${fName} <br> Email : ${fEmail} <br>`;
+      //email credentials and code will come here
+        Email.send({
+            SecureToken : "6362549e-f16d-43b2-892f-a5f4b245f88a",
+            To : '1muhammadaftab@gmail.com',
+            From : "webmuhammaddev@gmail.com",
+            Subject : "New Recipe Submission",
+            Body : fmessage
+        }).then(
+          message => alert("Thank you! Successfully Submitted!")
+);
+    });
+    </script>
+    <section>
+    </section>
+    <section></section>
+  </main>
+  <footer>&copy; Copyright 2023 - RECIPE WORLD - MUHAMMAD AFTAB</footer>
+
+  <script src="./index.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+
+</html>
